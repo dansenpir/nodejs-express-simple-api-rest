@@ -1,0 +1,14 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "nodemon",
+        "test": "echo \"Error: no teste specified\" && exit 1"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.19.1",
+        "express": "^4.17.2"
+    }
+}
