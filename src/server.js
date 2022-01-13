@@ -1,10 +1,10 @@
 const port = 3003;
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
 const db = require('./database');
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/products', (req, res) => {
     res.send(db.getProducts());
